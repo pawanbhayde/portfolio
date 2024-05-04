@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="lg:px-14 px-8 py-20 md:flex items-start">
+    <header className="lg:px-14 px-8 py-24 md:flex items-start">
       <div className=" flex-1 flex flex-col gap-2">
         <div className="flex gap-2 items-center">
           <svg
@@ -228,7 +228,9 @@ const Header = () => {
           5 years at industry leaders like Instagram and seed-stage fintech
           startups like Ivella, all with some pretty talented people by my side.
           A million frames later and I’d do it all over again.
-          <br /><br />Here’s to the next million.  ✳️
+          <br />
+          <br />
+          Here’s to the next million. ✳️
         </p>
       </div>
     </header>

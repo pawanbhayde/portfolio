@@ -11,6 +11,7 @@ const Home = () => {
       <Header />
       <div className="lg:mx-14 mx-8 bg-gray-200 h-[1px]"></div>
       <Education />
+      <div className="block lg:hidden lg:mx-14 mx-8 bg-gray-200 h-[1px]"></div>
       <ProjectSection />
     </div>
   );
