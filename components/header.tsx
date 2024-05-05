@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="lg:px-14 px-8 py-24 md:flex items-start">
+    <header className="lg:px-14 px-8 py-20 md:flex items-start">
       <div className=" flex-1 flex flex-col gap-2">
         <div className="flex gap-2 items-center">
           <svg

@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const Education = () => {
+
+  
   return (
     <div className="py-24 lg:px-14 px-8 md:flex items-start">
       <div className="flex flex-col gap-2 flex-1">
@@ -39,7 +41,7 @@ const Education = () => {
             <h1 className="font-semibold text-lg">
               BTech in Artificial Intelligence
             </h1>
-            <p>GHRCE</p>
+            <p className="text-[#aaaaaa]">GHRCE</p>
           </div>
           <p className="hidden lg:block text-lg text-[#aaaaaa]">CRPF, Nagpur</p>
           <p className="">2022-Now</p>
@@ -49,7 +51,7 @@ const Education = () => {
             <h1 className="font-semibold text-lg">
               Diploma in Computer Engineering
             </h1>
-            <p>GHRIET</p>
+            <p className="text-[#aaaaaa]">GHRIET</p>
           </div>
           <p className="hidden lg:block text-lg text-[#aaaaaa]">
             Shradha Park, Nagpur
@@ -59,7 +61,7 @@ const Education = () => {
         <div className="flex justify-between pt-10">
           <div>
             <h1 className="font-semibold text-lg">High School Education</h1>
-            <p>MGHS</p>
+            <p className="text-[#aaaaaa]">MGHS</p>
           </div>
           <p className="hidden lg:block text-lg text-[#aaaaaa]">Wanadongri</p>
           <p className="">2018-2019</p>
