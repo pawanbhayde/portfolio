@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import PB from "../public/pb.png";
 
 const Header = () => {
   return (
@@ -232,6 +234,7 @@ const Header = () => {
           <br />
           Here’s to the next million. ✳️
         </p>
+        <Image src={PB} alt="pb" width={20} height={20} />
       </div>
     </header>
   );
