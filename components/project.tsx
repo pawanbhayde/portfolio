@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { projectsData } from "@/utils/projects";
+import Link from "next/link";
 
 const Project = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -44,7 +44,7 @@ const Project = () => {
         <div className="flex justify-center items-center h-full">
           {hoveredProject ? (
             <img
-              width={500}
+              className="h-[450px]"
               src={
                 projectsData.find((project) => project.id === hoveredProject)
                   ?.image
@@ -78,55 +78,57 @@ const Project = () => {
         <div>
           <ul>
             {projectsData.map((project) => (
-              <li
-                key={project.id}
-                className={`py-4 flex justify-between items-center border-b hover:${project.color} hover:translate-x-2 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}
-                onMouseEnter={() => handleProjectHover(project.id)}
-                onMouseLeave={() => handleProjectHover(null)}
-              >
-                <div>
-                  <h2 id="projectheading" className="text-[20px]">
-                    {project.name}
-                  </h2>
-                  <p className="text[12px]">{project.description}</p>
-                </div>
-                <div className="flex gap-6 items-center">
-                  {hoveredProject !== project.id && (
-                    <>
-                      <p className="hidden lg:block text-[#aaaaaa]">
-                        {project.type}
-                      </p>
-                      <p>{project.year}</p>
-                    </>
-                  )}
-                  {hoveredProject === project.id && (
-                    <div className="flex items-center gap-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width={32}
-                        height={32}
-                        color={"#aaaaaa"}
-                        fill={"none"}
-                      >
-                        <path
-                          d="M17 7L6 18"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                        />
-                        <path
-                          d="M11 6.13151C11 6.13151 16.6335 5.65662 17.4885 6.51153C18.3434 7.36645 17.8684 13 17.8684 13"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-              </li>
+              <Link href={project.link} target="_blank">
+                <li
+                  key={project.id}
+                  className={`py-4 flex justify-between items-center border-b hover:${project.color} hover:translate-x-2 hover:-translate-y-2 transition-transform duration-300 ease-in-out`}
+                  onMouseEnter={() => handleProjectHover(project.id)}
+                  onMouseLeave={() => handleProjectHover(null)}
+                >
+                  <div>
+                    <h2 id="projectheading" className="text-[20px]">
+                      {project.name}
+                    </h2>
+                    <p className="text[12px]">{project.description}</p>
+                  </div>
+                  <div className="flex gap-6 items-center">
+                    {hoveredProject !== project.id && (
+                      <>
+                        <p className="hidden lg:block text-[#aaaaaa]">
+                          {project.type}
+                        </p>
+                        <p>{project.year}</p>
+                      </>
+                    )}
+                    {hoveredProject === project.id && (
+                      <div className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width={32}
+                          height={32}
+                          color={"#aaaaaa"}
+                          fill={"none"}
+                        >
+                          <path
+                            d="M17 7L6 18"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M11 6.13151C11 6.13151 16.6335 5.65662 17.4885 6.51153C18.3434 7.36645 17.8684 13 17.8684 13"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
