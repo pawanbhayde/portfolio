@@ -15,8 +15,7 @@ const ColorShadesTool = () => {
     ];
 
     const shadeVariations = [
-      0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, -0.1, -0.2, -0.3, -0.4, -0.5,
-      -0.6, -0.7, -0.8, -0.9,
+      0.6, 0.5, 0.4, 0.3, 0.2, 0.1, -0.1, -0.2, -0.3, -0.4, -0.5,
     ];
 
     const generatedShades = shadeVariations.map((shade) => {
@@ -35,7 +34,20 @@ const ColorShadesTool = () => {
 
   return (
     <div className="container py-20 lg:h-[70vh] flex justify-center items-center flex-col mx-auto mt-8">
-      <h1 className="text-2xl font-bold mb-4">Color Shades Generator</h1>
+      <div className="max-w-2xl px-6 mx-auto  md:mt-16 md:mb-12 mb-6">
+        <div className="text-center md:mb-0">
+          <h1 className="text-3xl md:text-5xl tracking-tight font-bold text-color font-display">
+            Color Shades Generator
+          </h1>
+          <p className="text-color-muted md:text-lg mt-4 hidden md:block leading-normal">
+            Press spacebar, enter a hexcode or change the HSL values to create a
+            custom color scale
+          </p>
+          <p className="text-color-muted md:text-lg mt-4 md:hidden">
+            Enter a hexcode to create a custom color scale
+          </p>
+        </div>
+      </div>
       <div>
         <input
           type="text"
@@ -46,21 +58,23 @@ const ColorShadesTool = () => {
         />
         <button
           onClick={generateShades}
-          className="ml-2 px-4 py-2 bg-black text-white rounded-md"
+          className="ml-2 px-4 py-2 bg-black text-white rounded-md mb-8"
         >
           Generate Shades
         </button>
       </div>
-      <div className="flex lg:w-5/12 w-10/12 flex-wrap mt-4">
-        {shades.map((shade, index) => (
-          <div
-            key={index}
-            className="w-16 h-16 mr-2 mb-2"
-            style={{ backgroundColor: shade }}
-          >
-            <p className="text-xs text-white">{shade}</p>
-          </div>
-        ))}
+      <div className="max-w-5xl px-6 pb-12 w-full mx-auto space-y-8">
+        <div className="color-family-outline  flex flex-col md:flex-row overflow-hidden relative md:space-x-1 space-y-1 md:space-y-0 rounded-lg">
+          {shades.map((shade, index) => (
+            <div
+              key={index}
+              className="h-14 md:h-28 w-full rounded-lg p-2 md:p-4 flex justify-end items-center flex-col relative"
+              style={{ backgroundColor: shade }}
+            >
+              <p className="text-xs text-white">{shade}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
