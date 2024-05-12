@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
-import PB from "../public/pb.png";
+import OrbitingCircles from "@/components/magicui/orbiting-circles";
+import { OrbitingCirclesDemo } from "./orbite";
 
 const Header = () => {
   return (
@@ -121,6 +121,15 @@ const Header = () => {
           </svg>
           <p className="text-lg">UI/UX Designer</p>
         </div>
+        <p className="text-lg pt-4">
+          I’ve been lucky enough to work on all sorts of problems over the past
+          5 years at industry leaders like Instagram and seed-stage fintech
+          startups like Ivella, all with some pretty talented people by my side.
+          A million frames later and I’d do it all over again.
+          <br />
+          <br />
+          Here’s to the next million. ✳️
+        </p>
         <div className="flex gap-6 pt-14 items-center">
           <Link
             href="https://www.instagram.com/thepawanbhayde/"
@@ -224,17 +233,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="flex-1 lg:pt-0 pt-10">
-        <p className="text-lg">
-          I’ve been lucky enough to work on all sorts of problems over the past
-          5 years at industry leaders like Instagram and seed-stage fintech
-          startups like Ivella, all with some pretty talented people by my side.
-          A million frames later and I’d do it all over again.
-          <br />
-          <br />
-          Here’s to the next million. ✳️
-        </p>
-        <Image src={PB} alt="pb" width={20} height={20} />
+      <div className="flex-1 flex items-center justify-center lg:pt-0 pt-10">
+        <OrbitingCirclesDemo />
       </div>
     </header>
   );
