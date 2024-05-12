@@ -1,5 +1,4 @@
 import Link from "next/link";
-import OrbitingCircles from "@/components/magicui/orbiting-circles";
 import { OrbitingCirclesDemo } from "./orbite";
 
 const Header = () => {
