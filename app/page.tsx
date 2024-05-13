@@ -24,7 +24,6 @@ const Home = () => {
             "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
           )}
         />
-        s
       </div>
       <div className="block lg:hidden lg:mx-14 mx-8 bg-gray-200 h-[1px]"></div>
       <ProjectSection />
