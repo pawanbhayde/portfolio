@@ -22,6 +22,16 @@ export const projectsData = [
     },
     {
         id: 3,
+        name: "Amime Hub App",
+        description: "Mobile App for anime lovers.",
+        type: "Development",
+        year: "2024",
+        color: "#FFD700",
+        image: "https://i.imgur.com/faFlduI.png",
+        link: "https://github.com/pawanbhayde/animeapp",
+    },
+    {
+        id: 4,
         name: "Smart Bike App",
         description: "UIUX case study for a Smart Bike app.",
         type: "Design",
@@ -31,7 +41,7 @@ export const projectsData = [
         link: "https://www.behance.net/gallery/197925617/Smart-Bike-Mobile-App",
     },
     {
-        id: 4,
+        id: 5,
         name: "Zeelaundry App",
         description: "UIUX case study for a laundry app.",
         type: "Design",
@@ -41,7 +51,7 @@ export const projectsData = [
         link: "https://www.behance.net/gallery/177110899/ZeeLaundry-Best-laundry-and-ironing-services",
     },
     {
-        id: 5,
+        id: 6,
         name: "Kolkatta Veg Roll's",
         description: "Social Media post for a local food joint.",
         type: "Graphic Design",

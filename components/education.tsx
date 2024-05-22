@@ -1,8 +1,6 @@
 import Link from "next/link";
 
 const Education = () => {
-
-  
   return (
     <div className="py-24 lg:px-14 px-8 md:flex items-start">
       <div className="flex flex-col gap-2 flex-1">
@@ -43,7 +41,7 @@ const Education = () => {
             </h1>
             <p className="text-[#aaaaaa]">GHRCE</p>
           </div>
-          <p className="hidden lg:block text-lg text-[#aaaaaa]">CRPF, Nagpur</p>
+          {/* <p className="hidden lg:block text-lg text-[#aaaaaa]">CRPF, Nagpur</p> */}
           <p className="">2022-Now</p>
         </div>
         <div className="flex justify-between ">
@@ -53,9 +51,9 @@ const Education = () => {
             </h1>
             <p className="text-[#aaaaaa]">GHRIET</p>
           </div>
-          <p className="hidden lg:block text-lg text-[#aaaaaa]">
+          {/* <p className="hidden lg:block text-lg text-[#aaaaaa]">
             Shradha Park, Nagpur
-          </p>
+          </p> */}
           <p className="">2019-2022</p>
         </div>
         <div className="flex justify-between pt-10">
@@ -63,7 +61,7 @@ const Education = () => {
             <h1 className="font-semibold text-lg">High School Education</h1>
             <p className="text-[#aaaaaa]">MGHS</p>
           </div>
-          <p className="hidden lg:block text-lg text-[#aaaaaa]">Wanadongri</p>
+          {/* <p className="hidden lg:block text-lg text-[#aaaaaa]">Wanadongri</p> */}
           <p className="">2018-2019</p>
         </div>
       </div>
