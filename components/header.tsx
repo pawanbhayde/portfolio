@@ -121,10 +121,11 @@ const Header = () => {
           <p className="text-lg">UI/UX Designer</p>
         </div>
         <p className="text-lg pt-4">
-          I’ve been lucky enough to work on all sorts of problems over the past
-          5 years at industry leaders like Instagram and seed-stage fintech
-          startups like Ivella, all with some pretty talented people by my side.
-          A million frames later and I’d do it all over again.
+          I am full-stack developer at ProCohat Technologies, specializing in
+          building scalable web applications using Next.js, Supabase, and modern
+          JavaScript frameworks. With expertise in AI integration, database
+          management, and real-time data processing, I delivers robust solutions
+          for diverse tech projects.
           <br />
           <br />
           Here’s to the next million. ✳️

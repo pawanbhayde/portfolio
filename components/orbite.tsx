@@ -5,7 +5,7 @@ export function OrbitingCirclesDemo() {
   return (
     <div className="relative flex h-[500px] w-full  items-center justify-center overflow-hidden rounded-lg bg-transparent ">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl md:text-8xl font-semibold leading-none text-transparent ">
-        Techstack
+        Toolchain
       </span>
 
       {/* Inner Circles */}

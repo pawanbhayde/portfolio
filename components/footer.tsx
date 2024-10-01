@@ -5,7 +5,7 @@ const Footer = () => {
         <p>Updated 1.0.0</p>
       </div>
       <div>
-        <p className="hidden lg:block">Developed in NextJS, Made in India</p>
+        <p className="hidden lg:block">Developed in NextJS, Made with Love❤️</p>
       </div>
       <div>
         <p>© 2024</p>

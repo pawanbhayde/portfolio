@@ -6,12 +6,15 @@ import Education from "@/components/education";
 import Header from "@/components/header";
 import ProjectSection from "@/components/project";
 import Tools from "@/components/tools";
+import Experience from "@/components/experience";
 
 const Home = () => {
   return (
     <div className="">
       <div>
         <Header />
+        <div className="lg:mx-14 mx-8 bg-gray-200 h-[1px]"></div>
+        <Experience />
         <div className="lg:mx-14 mx-8 bg-gray-200 h-[1px]"></div>
         <Education />
         <DotPattern
